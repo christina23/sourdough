@@ -1,10 +1,12 @@
 baseURL = 'https://christina23.github.io/sourdough/'
 languageCode = 'en-us'
-title = 'Sourdough Guide'
+title = "Let's Make Sourdough"
 theme = 'ananke'
 
 [params]
   description = "Everything you need to know to bake your first sourdough loaf."
+  favicon = "/sourdough/favicon.svg"
+  background_color_class = "bg-camel"
 
 [markup.tableOfContents]
   startLevel = 2

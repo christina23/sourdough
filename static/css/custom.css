@@ -1,3 +1,8 @@
+/* ── Header ─────────────────────────────────────────── */
+.bg-camel {
+  background-color: #c19a6b !important;
+}
+
 /* ── Page layout ───────────────────────────────────── */
 .wiki-page {
   max-width: 880px;
