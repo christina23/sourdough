@@ -103,6 +103,13 @@ Place on parchment paper, seam-side down, in a medium bowl. Cover with a tea tow
 
 > **Poke test:** Press your thumb ½ inch into the dough. If it springs back all the way, it needs more time. If it springs back slowly and holds a slight indent, it's ready.
 
+**Option: Cold proof overnight (2-day method)**
+Instead of the room-temperature rise, you can refrigerate the shaped dough overnight. This is a great option if you want fresher bread in the morning, more flexibility on timing, or a more complex sour flavor.
+
+After shaping, place the dough seam-side up in a well-floured banneton (or a towel-lined bowl dusted with rice flour). Cover tightly with plastic wrap and refrigerate for **12–48 hours** — 24 hours is the sweet spot. The fridge slows fermentation way down, so it won't over-proof the way it would sitting on the counter.
+
+When ready to bake: remove from the fridge, turn it out onto parchment paper seam-side down, and let it rest at room temperature for **2 hours** before scoring and baking. Then proceed to Step 5 as normal.
+
 **Step 5 — Score and bake**
 Preheat oven to 450°F (232°C) with the Dutch oven inside for at least 30 minutes.
 
