@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="wiki-page ph3 ph4-l pv4 center">
+
+  {{ if .TableOfContents }}
+  <div class="wiki-toc">
+    <div class="wiki-toc-title">Contents</div>
+    {{ .TableOfContents }}
+  </div>
+  {{ end }}
+
+  <article class="wiki-content f4 lh-copy nested-links mid-gray">
+    {{ .Content }}
+  </article>
+
+</div>
+{{ end }}

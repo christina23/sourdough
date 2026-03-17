@@ -1,0 +1,137 @@
+/* ── Page layout ───────────────────────────────────── */
+.wiki-page {
+  max-width: 860px;
+}
+
+/* ── TOC – Wikipedia-style floating box ────────────── */
+.wiki-toc {
+  float: right;
+  clear: right;
+  margin: 0 0 1.5rem 2rem;
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  min-width: 200px;
+  max-width: 260px;
+}
+
+.wiki-toc-title {
+  background: #eaecf0;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.35rem 0.8rem;
+  border-bottom: 1px solid #a2a9b1;
+  letter-spacing: 0.02em;
+}
+
+.wiki-toc nav > ul {
+  margin: 0;
+  padding: 0.5rem 0.8rem 0.6rem 1.8rem;
+  list-style: decimal;
+}
+
+.wiki-toc nav > ul > li {
+  margin: 0.15rem 0;
+}
+
+.wiki-toc nav > ul > li > ul {
+  padding-left: 1.4rem;
+  list-style: none;
+}
+
+.wiki-toc nav > ul > li > ul > li::before {
+  content: "– ";
+  color: #888;
+}
+
+.wiki-toc a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.wiki-toc a:hover {
+  text-decoration: underline;
+}
+
+/* Stack TOC above content on small screens */
+@media (max-width: 640px) {
+  .wiki-toc {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+/* ── Content ────────────────────────────────────────── */
+.wiki-content {
+  text-align: left;
+}
+
+.wiki-content h2 {
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 0.2rem;
+  margin-top: 2rem;
+}
+
+.wiki-content h3 {
+  margin-top: 1.4rem;
+}
+
+.wiki-content blockquote {
+  border-left: 4px solid #c8aa6e;
+  background: #fffdf5;
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.wiki-content blockquote p {
+  margin: 0;
+}
+
+.wiki-content hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+/* ── Resources section ─────────────────────────────── */
+.wiki-content h2#resources {
+  margin-top: 2rem;
+}
+
+.wiki-content h2#resources ~ ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.75rem;
+}
+
+.wiki-content h2#resources ~ ul li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.55rem 0.8rem;
+  margin-bottom: 0.4rem;
+  border-left: 3px solid #c8aa6e;
+  background: #fafaf8;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.95em;
+  text-align: left;
+}
+
+.wiki-content h2#resources ~ ul li::before {
+  content: "→";
+  color: #c8aa6e;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.wiki-content h2#resources ~ ul a {
+  color: #0645ad;
+}
+
+.wiki-content h2#resources ~ ul a:hover {
+  text-decoration: underline;
+}
