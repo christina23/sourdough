@@ -8,11 +8,11 @@ header nav .flex-l > a:first-child {
   display: none;
 }
 
-/* Centered hero title — small caps, warm white, not grey */
+/* Centered hero title — all-caps small caps, warm white, not grey */
 header h1 {
   color: #fff8f0 !important;
-  font-variant: small-caps;
-  letter-spacing: 0.06em;
+  font-variant: all-small-caps;
+  letter-spacing: 0.08em;
 }
 
 /* Infographic */
