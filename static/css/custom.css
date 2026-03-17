@@ -50,6 +50,15 @@ header h1 {
   pointer-events: none;
 }
 
+/* Infographic caption */
+.wiki-content img + p em {
+  display: block;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
 /* Lightbox overlay */
 .img-lightbox {
   display: none;

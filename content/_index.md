@@ -198,3 +198,5 @@ Don't throw it away. Take it out, let it come to room temperature, discard down 
 ## Fermentation Guide
 
 ![Sourdough fermentation infographic](/sourdough/images/ferment.jpeg)
+
+*Source: [r/Sourdough — Reading Crumb for Fermentation](https://www.reddit.com/r/Sourdough/comments/1b0t5jr/reading_crumb_for_fermentation/)*
