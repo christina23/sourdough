@@ -23,6 +23,55 @@ header h1 {
   margin: 1rem auto;
   border-radius: 6px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  cursor: zoom-in;
+}
+
+.img-zoom-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.img-zoom-wrap::after {
+  content: "+";
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.5rem;
+  text-align: center;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Lightbox overlay */
+.img-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.82);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.img-lightbox.open {
+  display: flex;
+}
+
+.img-lightbox img {
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 6px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+  cursor: default;
 }
 
 /* ── Page layout ───────────────────────────────────── */
