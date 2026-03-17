@@ -120,6 +120,17 @@ header h1 {
 /* ── Content ────────────────────────────────────────── */
 .wiki-content {
   text-align: left;
+  color: #4a3828;
+}
+
+.wiki-content a {
+  color: #7a5528;
+  text-decoration: none;
+}
+
+.wiki-content a:hover {
+  color: #c8791e;
+  text-decoration: underline;
 }
 
 .wiki-content h2 {
@@ -203,6 +214,8 @@ header h1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   font-size: 0.93em;
   transition: background 0.15s;
+  position: relative;
+  cursor: pointer;
 }
 
 .wiki-content h2#resources ~ ul li:hover {
@@ -219,6 +232,12 @@ header h1 {
 .wiki-content h2#resources ~ ul a {
   color: #7a5528;
   text-decoration: none;
+}
+
+.wiki-content h2#resources ~ ul a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .wiki-content h2#resources ~ ul a:hover {
