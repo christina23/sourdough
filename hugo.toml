@@ -4,7 +4,7 @@ title = "Let's Make Sourdough"
 theme = 'ananke'
 
 [params]
-  description = "Everything you need to know to bake your first sourdough loaf."
+  description = "Everything you need to know to make a starter, bake your first loaf, and keep your starter alive."
   favicon = "/sourdough/favicon.svg"
   background_color_class = "bg-camel"
 

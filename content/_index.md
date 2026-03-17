@@ -1,6 +1,6 @@
 ---
 title: "Let's Make Sourdough"
-description: "Everything you need to know to make a starter, bake your first loaf, and keep it going."
+description: "Everything you need to know to make a starter, bake your first loaf, and keep your starter alive."
 ---
 
 A personal guide based on [Amy Duska's recipes at Little Spoon Farm](https://littlespoonfarm.com). Sourdough is a background-day project — most of the time it's just sitting there doing its thing. The active work is maybe 30 minutes total; the waiting is days (for your starter) then hours (for your bread).
