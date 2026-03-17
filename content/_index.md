@@ -1,5 +1,5 @@
 ---
-title: "Sourdough Guide"
+title: "Let's Make Sourdough"
 description: "Everything you need to know to make a starter, bake your first loaf, and keep it going."
 ---
 
@@ -192,3 +192,9 @@ Don't throw it away. Take it out, let it come to room temperature, discard down 
 - **Maintaining your starter:** [Little Spoon Farm — How to Feed & Maintain a Sourdough Starter](https://littlespoonfarm.com/how-to-feed-maintain-sourdough-starter/)
 - **Reading your crumb:** [r/Sourdough — Fermentation Crumb Guide](https://www.reddit.com/r/Sourdough/comments/1b0t5jr/reading_crumb_for_fermentation/)
 - **Fermentation calculators and tools:** [The Sourdough Journey — Tools](https://thesourdoughjourney.com/tools/)
+
+---
+
+## Fermentation Guide
+
+![Sourdough fermentation infographic](/sourdough/images/ferment.jpeg)

@@ -3,6 +3,28 @@
   background-color: #c19a6b !important;
 }
 
+/* Hide site title from top-left nav — it's in the centered hero instead */
+header nav .flex-l > a:first-child {
+  display: none;
+}
+
+/* Centered hero title — small caps, warm white, not grey */
+header h1 {
+  color: #fff8f0 !important;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+}
+
+/* Infographic */
+.wiki-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
 /* ── Page layout ───────────────────────────────────── */
 .wiki-page {
   max-width: 880px;
