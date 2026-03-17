@@ -1,56 +1,83 @@
 /* ── Page layout ───────────────────────────────────── */
 .wiki-page {
-  max-width: 860px;
+  max-width: 880px;
 }
 
-/* ── TOC – Wikipedia-style floating box ────────────── */
+/* ── TOC ────────────────────────────────────────────── */
 .wiki-toc {
   float: right;
   clear: right;
-  margin: 0 0 1.5rem 2rem;
-  border: 1px solid #a2a9b1;
-  background: #f8f9fa;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  min-width: 200px;
-  max-width: 260px;
+  margin: 0.25rem 0 1.75rem 2.25rem;
+  background: #fffdf7;
+  border: 1px solid #e8dfc8;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  min-width: 210px;
+  max-width: 270px;
+  overflow: hidden;
 }
 
 .wiki-toc-title {
-  background: #eaecf0;
+  background: linear-gradient(135deg, #f5ead8 0%, #ede0c4 100%);
   text-align: center;
   font-weight: 700;
-  padding: 0.35rem 0.8rem;
-  border-bottom: 1px solid #a2a9b1;
-  letter-spacing: 0.02em;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  color: #6b4c1e;
+  border-bottom: 1px solid #e8dfc8;
 }
 
 .wiki-toc nav > ul {
   margin: 0;
-  padding: 0.5rem 0.8rem 0.6rem 1.8rem;
-  list-style: decimal;
+  padding: 0.6rem 1rem 0.7rem 0.6rem;
+  list-style: none;
+  counter-reset: toc-section;
 }
 
 .wiki-toc nav > ul > li {
-  margin: 0.15rem 0;
+  counter-increment: toc-section;
+  margin: 0.2rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+}
+
+.wiki-toc nav > ul > li::before {
+  content: counter(toc-section) ".";
+  position: absolute;
+  left: 0;
+  color: #b08040;
+  font-weight: 600;
+  font-size: 0.8rem;
+  min-width: 1.4rem;
 }
 
 .wiki-toc nav > ul > li > ul {
-  padding-left: 1.4rem;
   list-style: none;
+  padding: 0.1rem 0 0.1rem 0.5rem;
+  margin: 0;
+  border-left: 2px solid #f0e4cc;
+  margin-left: 0.1rem;
+  margin-top: 0.15rem;
 }
 
-.wiki-toc nav > ul > li > ul > li::before {
-  content: "– ";
+.wiki-toc nav > ul > li > ul > li {
+  margin: 0.1rem 0;
   color: #888;
+  font-size: 0.82rem;
 }
 
 .wiki-toc a {
-  color: #0645ad;
+  color: #7a5528;
   text-decoration: none;
+  transition: color 0.15s;
 }
 
 .wiki-toc a:hover {
+  color: #c8791e;
   text-decoration: underline;
 }
 
@@ -59,7 +86,7 @@
   .wiki-toc {
     float: none;
     max-width: 100%;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.75rem 0;
   }
 }
 
@@ -69,22 +96,55 @@
 }
 
 .wiki-content h2 {
-  border-bottom: 1px solid #d0d0d0;
-  padding-bottom: 0.2rem;
-  margin-top: 2rem;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #f0e4cc;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+  color: #3a2a10;
 }
 
 .wiki-content h3 {
-  margin-top: 1.4rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #5a3e20;
+}
+
+.wiki-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.9em;
+}
+
+.wiki-content th {
+  background: #f5ead8;
+  color: #6b4c1e;
+  text-align: left;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #e8dfc8;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.wiki-content td {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #e8dfc8;
+  vertical-align: top;
+}
+
+.wiki-content tr:nth-child(even) td {
+  background: #fffdf7;
 }
 
 .wiki-content blockquote {
-  border-left: 4px solid #c8aa6e;
-  background: #fffdf5;
-  margin: 1rem 0;
-  padding: 0.6rem 1rem;
-  color: #555;
-  font-size: 0.95em;
+  border-left: 4px solid #d4a855;
+  background: #fffdf0;
+  margin: 1.25rem 0;
+  padding: 0.65rem 1rem;
+  color: #5a4020;
+  font-size: 0.93em;
+  border-radius: 0 4px 4px 0;
 }
 
 .wiki-content blockquote p {
@@ -93,15 +153,11 @@
 
 .wiki-content hr {
   border: none;
-  border-top: 1px solid #e0e0e0;
-  margin: 2rem 0;
+  border-top: 2px solid #f0e4cc;
+  margin: 2.5rem 0;
 }
 
 /* ── Resources section ─────────────────────────────── */
-.wiki-content h2#resources {
-  margin-top: 2rem;
-}
-
 .wiki-content h2#resources ~ ul {
   list-style: none;
   padding: 0;
@@ -111,27 +167,34 @@
 .wiki-content h2#resources ~ ul li {
   display: flex;
   align-items: baseline;
-  gap: 0.5rem;
-  padding: 0.55rem 0.8rem;
-  margin-bottom: 0.4rem;
-  border-left: 3px solid #c8aa6e;
-  background: #fafaf8;
-  border-radius: 0 4px 4px 0;
-  font-size: 0.95em;
-  text-align: left;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid #d4a855;
+  background: #fffdf7;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  font-size: 0.93em;
+  transition: background 0.15s;
+}
+
+.wiki-content h2#resources ~ ul li:hover {
+  background: #fff8e8;
 }
 
 .wiki-content h2#resources ~ ul li::before {
   content: "→";
-  color: #c8aa6e;
+  color: #d4a855;
   font-weight: 700;
   flex-shrink: 0;
 }
 
 .wiki-content h2#resources ~ ul a {
-  color: #0645ad;
+  color: #7a5528;
+  text-decoration: none;
 }
 
 .wiki-content h2#resources ~ ul a:hover {
+  color: #c8791e;
   text-decoration: underline;
 }
